@@ -14,8 +14,4 @@ RUN powershell.exe -Command \
   Start-Process c:\pmss.msi -ArgumentList '/qn', '/norestart', '/log c:\pmsslog.txt' -Wait ; \
   Remove-Item c:\pmss.msi -Force
 
-#WORKDIR /SABnzbd-2.3.0
-
 EXPOSE 32400/tcp 3005/tcp 8324/tcp 32469/tcp 1900/udp 32410/udp 32412/udp 32413/udp 32414/udp
-
-#CMD ["/SABnzbd-2.3.0/SABnzbd.exe"]
