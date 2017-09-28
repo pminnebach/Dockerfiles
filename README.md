@@ -14,7 +14,7 @@ Second, since windows containers does not create the local folders upon running,
 
 ### Sabnzbd
 
-    docker run --rm \
+    docker run --restart=always \
         -d \
         -p 7878:7878 \
         -v <local\path>:C:\Config \
@@ -23,7 +23,7 @@ Second, since windows containers does not create the local folders upon running,
 
 ### Sickrage
 
-    docker run --rm \
+    docker run --restart=always \
         -d \
         -p 8080:8080 \
         -v <local\path>:C:\Config \
@@ -33,10 +33,10 @@ Second, since windows containers does not create the local folders upon running,
 
 ### Radarr
 
-    docker run --rm \
+    docker run --restart=always \
         -d \
         -p 7878:7878 \
-        -v <local\path>:C:\config \
+        -v <local\path>:C:\Config \
         -v <local\path>:C:\Downloads \
         -v <local\path>:C:\Movies \
         radarr
@@ -48,3 +48,5 @@ I haven't figured out how to keep Plex running inside the container.
 ## Notes
 
 These containers are made to just run and are not optimized yet for containersize. With the fall release of Windows Server 2016 (1709) and the new smaller Nanoserver containers i will try and convert them.
+
+Also, the folders are mapped in a certain way so that SickRage and Radar can do proper download handeling and importing of downloaded movies and shows.
