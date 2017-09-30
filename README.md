@@ -52,8 +52,9 @@ These containers are made to just run and are not optimized yet for containersiz
 Also, the folders are mapped in a certain way so that SickRage and Radar can do proper download handeling and importing of downloaded movies and shows.
 
 ## TODO
-* Change SickRage container to use FROM python:2-windowsservercore.
-* Convert all images where possible to nanoserver (upon release of ws2016 1709).
-** Test multi-stage builds where possible. (nanoserver suposedly doesn't have the windows installer subsystem.)
-* Comment code with links to original source code.
-* Create docker-compose.yml with all images in them.
+
+- [ ] Change SickRage container to use FROM python:2-windowsservercore.
+- [ ] Convert all images where possible to nanoserver (upon release of ws2016 1709).
+- [ ] Test multi-stage builds where possible. (nanoserver suposedly doesn't have the windows installer subsystem.)
+- [ ] Comment code with links to original source code.
+- [ ] Create docker-compose.yml with all images in them.
