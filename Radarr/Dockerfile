@@ -7,7 +7,7 @@ MAINTAINER pminnebach
 RUN powershell.exe -Command \
     $ErrorActionPreference = 'Stop'; \
     $ProgressPreference = 'SilentlyContinue'; \
-    Invoke-WebRequest https://github.com/Radarr/Radarr/releases/download/v0.2.0.852/Radarr.develop.0.2.0.852.windows.zip -OutFile c:\radarr.zip ; \
+    Invoke-WebRequest https://github.com/Radarr/Radarr/releases/download/v0.2.0.870/Radarr.develop.0.2.0.870.windows.zip -OutFile c:\radarr.zip ; \
     Expand-Archive c:\radarr.zip -DestinationPath C:\ ; \
     Remove-Item -Path c:\radarr.zip -Force
 
